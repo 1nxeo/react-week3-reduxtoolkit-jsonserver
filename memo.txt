@@ -1,0 +1,19 @@
+yarn add json-server
+
+
+db.json 파일 생성 (루트에)
+예시
+{
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}
+json 형식임 : key 가 따옴표로 감싸져있으니깐~
+
+json-server --watch db.json
+포트 지정도 가능
+json-server --watch db.json --port 4000
